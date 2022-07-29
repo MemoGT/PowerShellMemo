@@ -1,3 +1,5 @@
+#Ejercicio Using powerShell to report stopped services
+
 get-service |   # Lista todos los servicios
 Where-Object Status -eq 'Stopped' |  # donde el status del objeto sea detenido.
 Select-Object Name, Status  # Seleccionar solo el nombre y status
